@@ -16,6 +16,9 @@ Explanation: There is no common prefix among the input strings.
 """
 
 
+from ast import List
+
+
 def longestCommonPrefix(self, strs: List[str]) -> str:
            referencia = strs[0]
            prefix = ""
