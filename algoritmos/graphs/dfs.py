@@ -1,3 +1,6 @@
+from typing import Any
+
+
 def dfs(graph, start, visited=None, result=None):
     if visited is None:
         visited = set()
@@ -25,7 +28,7 @@ def dfs_iterative(graph, start):
             visited.add(vertex)
             result.append(vertex)
 
-            for neighbor in reversed(graph.get(vertex, [])):
+            for neighbor in reversed[Any](graph.get(vertex, [])):
                 if neighbor not in visited:
                     stack.append(neighbor)
 
